@@ -14,7 +14,7 @@ import android.webkit.WebViewClient;
 public class MainActivity extends AppCompatActivity {
 
     WebView webView;
-    String url = "http:/localhost:8081";
+    String url = "localhost:8081";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
