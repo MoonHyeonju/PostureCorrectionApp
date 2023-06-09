@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>회원가입 페이지</title>
+
+    <style>
+        * {
+            margin: 0px;
+            box-sizing: border-box;
+            font-size: 11px;
+        }
+
+        html {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        body {
+            width: 45%;
+            border: 1px solid black;
+        }
+
+        input{
+            border: 1px solid black;
+            border-radius: 3px;
+            line-height: 35px;
+            font-size: 12px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+
+        .wrapper {
+            padding: 10px;
+        }
+
+        div {
+            padding-top: 3px;
+            padding-bottom: 8px;
+        }
+
+        .title {
+            text-align: center;
+            font-weight: 700;
+        }
+
+        .email input {
+            width: 100%;
+        }
+
+        .id input {
+            width: 100%;
+        }
+
+        .name input {
+            width: 100%;
+        }
+
+        .password input {
+            width: 100%;
+        }
+
+        .passwordCheck input {
+            width: 100%;
+        }
+
+        .signUp button {
+            width: 100%;
+            cursor:pointer;
+        }
+
+        button{
+            cursor: pointer;
+            height: 30px;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+<div class="wrapper">
+    <div class="title"><h1 style="font-size: 21px;">회원가입</h1></div>
+    <div class="email">
+        <input id="email" type="text" placeholder="이메일을 입력해 주세요.">
+        <div id="emailError" class="error"></div>
+    </div>
+    <div class="id">
+        <input id="id"  type="text" placeholder="아이디를 입력해 주세요.">
+        <div id="id" class="error"></div>
+    </div>
+    <div class="name">
+        <input id="name"  type="text" placeholder="이름을 입력해 주세요.">
+        <div id="nameError" class="error"></div>
+    </div>
+    <div class="password">
+        <input id="password" type="password" placeholder="비밀번호를 입력해 주세요.">
+        <div id="passwordError" class="error"></div>
+    </div>
+    <div class="passwordCheck">
+        <input id="passwordCheck" type="password" placeholder="비밀번호를 다시 입력해 주세요.">
+        <div id="passwordCheckError" class="error"></div>
+    </div>
+
+    <div class="line">
+        <hr>
+    </div>
+    <div class="signUp">
+        <button id="signUpButton" onclick="signUpCheck()">가입하기</button>
+    </div>
+</div>
+<script src="register.js"></script>
+</body>
+
+</html>
